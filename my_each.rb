@@ -1,7 +1,8 @@
-def my_each (tas)
-  tas.each do |tas|
-    puts "testing 1 2 3" # put argument(s) here
-  # code here
- end
-
-end
+def my_each(array)
+   i = 0
+   while i < array.length
+      yield(array[i])
+      i +=1
+    end
+    array
+  end  
